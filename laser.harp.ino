@@ -53,4 +53,6 @@ void loop() {
     
     Serial.println(na); // change na to nb, nc, nd, ne and nf to see the analog read of each and calibrate accordingly
 // check analog values on serial monitor
+// First align the laser at the LDR and ensure that there is a non-zero value appearing in the serial monitor
+// Then block the laser beam, note down this value, now set the threshold value greater than this value.
 }
