@@ -27,27 +27,27 @@ void setup() {
 
 void loop() {
     na = analogRead(A); // analog read  
-    if (na < 100) {     //inorder to calibrate the na(idle) should be lower than 100 in this case
+    if (na > 100) {     //inorder to calibrate the na(idle) should be lower than 100 in this case
       tone(SPK, 203, 200);
     }
     nb = analogRead(B); // analog read  
-    if (nb < 50) {
+    if (nb > 50) {
       tone(SPK, 303, 200);
     }
     nc = analogRead(C); // analog read  
-    if (nc < 100) {
+    if (nc > 100) {
       tone(SPK, 403, 200);
     }
     nd = analogRead(D); // analog read  
-    if (nd < 100) {
+    if (nd > 100) {
       tone(SPK, 503, 200);
     }
     ne = analogRead(E); // analog read  
-    if (ne < 50) {
+    if (ne > 50) {
       tone(SPK, 603, 200);
     }
     nf = analogRead(F); // analog read  
-    if (nf < 100) {
+    if (nf > 100) {
       tone(SPK, 703, 200);
     }
     
