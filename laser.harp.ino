@@ -27,7 +27,7 @@ void setup() {
 
 void loop() {
     na = analogRead(A); // analog read  
-    if (na > 100) {     //inorder to calibrate the na(idle) should be lower than 100 in this case
+    if (na > 100) {     
       tone(SPK, 203, 200);
     }
     nb = analogRead(B); // analog read  
